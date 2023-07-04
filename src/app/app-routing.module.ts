@@ -6,15 +6,17 @@ import {UpdateCustomerComponent} from "./components/update-customer/update-custo
 import {AddCustomerComponent} from "./components/add-customer/add-customer.component";
 import {ListAccountsCustomerComponent} from "./components/list-accounts-customer/list-accounts-customer.component";
 import {AddAccountComponent} from "./components/add-account/add-account.component";
+import {AccountsComponent} from "./components/accounts/accounts.component";
 
 const routes: Routes = [
-  {path: '', redirectTo: 'list-customers', pathMatch: 'full' },
+  {path: '', redirectTo: 'accounts', pathMatch: 'full' },
   {path: 'list-customers', component: ListCustomerComponent},
   {path: 'details-customer/:id', component: DetailsCustomerComponent},
   {path: 'update-customer/:id', component: UpdateCustomerComponent},
   {path: 'add-customer', component: AddCustomerComponent},
   {path: 'add-accounts-customer/:id', component: ListAccountsCustomerComponent},
-  {path: 'add-account/:id', component: AddAccountComponent}
+  {path: 'add-account/:id', component: AddAccountComponent},
+  {path: 'accounts', component: AccountsComponent},
 ];
 
 @NgModule({
