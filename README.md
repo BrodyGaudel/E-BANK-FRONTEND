@@ -1,7 +1,6 @@
-# EbankUi
-![image](https://github.com/BrodyGaudel/E-BANK-FRONTEND/assets/57298219/efb3b1e4-4b00-4dea-8071-7bfb488cc1a6)
+# AdminBankUi
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.0.1.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.3.
 
 ## Development server
 

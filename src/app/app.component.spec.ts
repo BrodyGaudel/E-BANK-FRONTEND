@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'ebank-ui'`, () => {
+  it(`should have as title 'admin-bank-ui'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ebank-ui');
+    expect(app.title).toEqual('admin-bank-ui');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ebank-ui app is running!');
+    expect(compiled.querySelector('h1')?.textContent).toContain('Hello, admin-bank-ui');
   });
 });

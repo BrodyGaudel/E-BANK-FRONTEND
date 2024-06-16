@@ -3,35 +3,39 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { AddCustomerComponent } from './components/add-customer/add-customer.component';
-import { ListCustomerComponent } from './components/list-customer/list-customer.component';
-import { UpdateCustomerComponent } from './components/update-customer/update-customer.component';
+import {NgOptimizedImage} from "@angular/common";
 import {HttpClientModule} from "@angular/common/http";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
-import { DetailsCustomerComponent } from './components/details-customer/details-customer.component';
-import { AccountsComponent } from './components/accounts/accounts.component';
-import { AddAccountComponent } from './components/add-account/add-account.component';
-import { ListAccountsCustomerComponent } from './components/list-accounts-customer/list-accounts-customer.component';
+import { CreateCustomerComponent } from './component/create-customer/create-customer.component';
+import { ShowAllCustomerComponent } from './component/show-all-customer/show-all-customer.component';
+import { CustomerDetailsComponent } from './component/customer-details/customer-details.component';
+import { UpdateCustomerComponent } from './component/update-customer/update-customer.component';
+import { OperationComponent } from './component/operation/operation.component';
+import { LoginComponent } from './component/login/login.component';
+import { ForbiddenComponent } from './component/forbidden/forbidden.component';
+import { AccountOperationComponent } from './component/account-operation/account-operation.component';
+import { UsersComponent } from './component/users/users.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
-    AddCustomerComponent,
-    ListCustomerComponent,
+    CreateCustomerComponent,
+    ShowAllCustomerComponent,
+    CustomerDetailsComponent,
     UpdateCustomerComponent,
-    DetailsCustomerComponent,
-    AccountsComponent,
-    AddAccountComponent,
-    ListAccountsCustomerComponent,
+    OperationComponent,
+    LoginComponent,
+    ForbiddenComponent,
+    AccountOperationComponent,
+    UsersComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    NgOptimizedImage,
   ],
   providers: [],
   bootstrap: [AppComponent]
